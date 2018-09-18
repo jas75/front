@@ -1,0 +1,38 @@
+page-bug {
+
+  .body {
+
+  }
+
+  .content content-ios {
+    margin-top: 50px;
+  }
+
+  .content-ios {
+    background-color: #f4f4f4;
+  }
+
+  .bandeau {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: white;
+  }
+
+  .selected {
+    color: black !important;
+    font-weight: 500;
+    border-bottom: 1px solid blue;
+  }
+
+  .theme {
+    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    color: #717171;
+    //color: #f4f4f4;
+  }
+
+}

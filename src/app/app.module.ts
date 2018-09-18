@@ -10,6 +10,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {BugPage} from "../pages/bug/bug";
+import {BugHomePage} from "../pages/bug/bug-content/bug-home/bug-home";
+import {BugNewsPage} from "../pages/bug/bug-content/bug-news/bug-news";
+import {BugPopPage} from "../pages/bug/bug-content/bug-pop/bug-pop";
+import {AddPage} from "../pages/add/add";
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    BugPage,
+    BugHomePage,
+    BugNewsPage,
+    BugPopPage,
+    AddPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +39,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    BugPage,
+    BugHomePage,
+    BugNewsPage,
+    BugPopPage,
+    AddPage
   ],
   providers: [
     StatusBar,

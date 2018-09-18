@@ -1,0 +1,27 @@
+
+
+<ion-content  class="masters">
+
+  <div class="bandeau">
+    <div class="theme" (click)="tabSelect(1)" [ngClass]="{'selected': tabSelected === 1}">
+      News
+    </div>
+    <div class="selected theme" (click)="tabSelect(2)" [ngClass]="{'selected': tabSelected === 2}">
+      Home
+    </div>
+    <div class="theme" (click)="tabSelect(3)" [ngClass]="{'selected': tabSelected === 3}">
+      Popular
+    </div>
+  </div>
+
+
+  <div class="body">
+
+    <page-bug-news *ngIf="tabSelected === 1"></page-bug-news>
+
+    <page-bug-home *ngIf="tabSelected === 2"></page-bug-home>
+
+    <page-bug-pop *ngIf="tabSelected === 3"></page-bug-pop>
+  </div>
+
+</ion-content>
