@@ -17,6 +17,8 @@ import {BugPopPage} from "../pages/bug/bug-content/bug-pop/bug-pop";
 import {AddPage} from "../pages/add/add";
 import {AddLinkPage} from "../pages/add/add-content/add-link/add-link";
 import {AddTextPage} from "../pages/add/add-content/add-text/add-text";
+import {NewsapiService} from "../services/newsapi.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import {AddTextPage} from "../pages/add/add-content/add-text/add-text";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -55,7 +58,8 @@ import {AddTextPage} from "../pages/add/add-content/add-text/add-text";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    NewsapiService
   ]
 })
 export class AppModule {}

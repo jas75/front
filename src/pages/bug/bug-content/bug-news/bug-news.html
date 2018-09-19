@@ -1,5 +1,44 @@
+<ion-card *ngFor="let article of articles">
+
+  <ion-card-header>
+    <div class="ticket-infos">
+      <div style="font-weight: 500;">
+        {{article.author | slice:0:15}}<span style="font-weight: 300"> - {{article.publishedAt | date: 'medium'}},</span>
+      </div>
+    </div>
+  </ion-card-header>
+
+  <ion-card-content>
 
 
+    <a href="{{article.url}}">
+      <h2 style="font-weight: 600; margin-bottom: 10px;">
+        {{article.title}}
+      </h2>
 
-<h1>https://newsapi.org/</h1>
 
+      <img class="" src="{{article.urlToImage}}">
+      <span class="bandeau-link">  &nbsp; {{article.source.name}}  &nbsp;<ion-icon ios="md-share" md="md-share"></ion-icon></span>
+    </a>
+
+    <div class="interact">
+      <div style="float: left;">
+        <ion-icon ios="md-arrow-round-up" md="md-arrow-round-up"></ion-icon>
+        <div style="margin-left: 10px;margin-right: 10px;">
+          1,289
+        </div>
+        <ion-icon ios="md-arrow-round-down" md="md-arrow-round-down"></ion-icon>
+      </div>
+
+
+      <div>
+        <ion-icon ios="ios-chatboxes" md="md-chatboxes"></ion-icon> &nbsp;19
+      </div>
+
+      <div style="float: right;">
+        <ion-icon ios="ios-share-outline" md="md-share"></ion-icon> &nbsp;Share
+      </div>
+    </div>
+  </ion-card-content>
+
+</ion-card>
