@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import {NavController, ViewController} from 'ionic-angular';
 
 @Component({
-  selector: 'page-add-link',
-  templateUrl: 'add-link.html'
+  selector: 'page-add-text',
+  templateUrl: 'add-text.html'
 })
-export class AddLinkPage {
+export class AddTextPage {
 
   constructor(public navCtrl: NavController, public viewCtrl: ViewController ) {
 

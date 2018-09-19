@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {ModalController, NavController, ViewController} from 'ionic-angular';
 import {AddLinkPage} from "./add-content/add-link/add-link";
+import {AddTextPage} from "./add-content/add-text/add-text";
 
 @Component({
   selector: 'page-add',
@@ -13,6 +14,7 @@ export class AddPage {
   }
 
   linkTab = AddLinkPage;
+  textTab = AddTextPage;
 
 
   dismiss() {

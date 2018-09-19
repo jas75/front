@@ -16,6 +16,7 @@ import {BugNewsPage} from "../pages/bug/bug-content/bug-news/bug-news";
 import {BugPopPage} from "../pages/bug/bug-content/bug-pop/bug-pop";
 import {AddPage} from "../pages/add/add";
 import {AddLinkPage} from "../pages/add/add-content/add-link/add-link";
+import {AddTextPage} from "../pages/add/add-content/add-text/add-text";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {AddLinkPage} from "../pages/add/add-content/add-link/add-link";
     BugNewsPage,
     BugPopPage,
     AddPage,
-    AddLinkPage
+    AddLinkPage,
+    AddTextPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import {AddLinkPage} from "../pages/add/add-content/add-link/add-link";
     BugNewsPage,
     BugPopPage,
     AddPage,
-    AddLinkPage
+    AddLinkPage,
+    AddTextPage
   ],
   providers: [
     StatusBar,
