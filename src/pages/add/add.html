@@ -1,2 +1,54 @@
-<div>Page add</div>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cum delectus dolorum eligendi facilis fuga iure iusto obcaecati perspiciatis quae quas quis, rem repellendus repudiandae suscipit vel vero! Ea, quia.
+
+<div class="choice">
+
+  <div (click)="openModal(linkTab)">
+
+    <div class="round-choice">
+      <div>
+        <ion-icon ios="ios-link" md="md-link"></ion-icon>
+      </div>
+    </div>
+    <div class="label">LINK</div>
+  </div>
+
+  <div>
+    <div class="round-choice">
+        <i class="fas fa-font"></i>
+    </div>
+    <div class="label">
+      TEXT
+    </div>
+
+  </div>
+
+  <div>
+
+    <div class="round-choice">
+      <div>
+        <ion-icon ios="ios-image" md="md-image"></ion-icon>
+      </div>
+    </div>
+    <div class="label">
+      IMAGE
+    </div>
+  </div>
+
+  <div>
+
+    <div class="round-choice">
+      <div>
+        <ion-icon ios="ios-videocam" md="md-videocam"></ion-icon>
+      </div>
+
+    </div>
+    <div class="label">
+      VIDEO
+    </div>
+  </div>
+
+</div>
+
+
+<div (click)="dismiss()" class="close-btn">
+  <ion-icon ios="ios-close" md="md-close"></ion-icon>
+</div>
