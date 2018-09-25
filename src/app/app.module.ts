@@ -19,6 +19,10 @@ import {AddLinkPage} from "../pages/add/add-content/add-link/add-link";
 import {AddTextPage} from "../pages/add/add-content/add-text/add-text";
 import {NewsapiService} from "../services/newsapi.service";
 import {HttpClientModule} from "@angular/common/http";
+import {ProfilePage} from "../pages/profile/profile";
+import {ProfilePostsPage} from "../pages/profile/profile-content/profile-posts/profile-posts";
+import {ProfileCommentsPage} from "../pages/profile/profile-content/profile-comments/profile-comments";
+import {ProfileAboutPage} from "../pages/profile/profile-content/profile-about/profile-about";
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import {HttpClientModule} from "@angular/common/http";
     BugPopPage,
     AddPage,
     AddLinkPage,
-    AddTextPage
+    AddTextPage,
+    ProfilePage,
+    ProfilePostsPage,
+    ProfileCommentsPage,
+    ProfileAboutPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +61,11 @@ import {HttpClientModule} from "@angular/common/http";
     BugPopPage,
     AddPage,
     AddLinkPage,
-    AddTextPage
+    AddTextPage,
+    ProfilePage,
+    ProfilePostsPage,
+    ProfileCommentsPage,
+    ProfileAboutPage
   ],
   providers: [
     StatusBar,

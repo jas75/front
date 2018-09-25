@@ -6,6 +6,7 @@ import { HomePage } from '../home/home';
 import {BugPage} from "../bug/bug";
 import {ModalController} from "ionic-angular";
 import {AddPage} from "../add/add";
+import {ProfilePage} from "../profile/profile";
 
 @Component({
   templateUrl: 'tabs.html',
@@ -18,6 +19,7 @@ export class TabsPage {
   tab2Root = AboutPage;
   tab3Root = AddPage;
   tab4Root = BugPage;
+  tab5Root = ProfilePage
 
 
   constructor(public modalCtrl: ModalController) {

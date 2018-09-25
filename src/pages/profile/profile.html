@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="body">
+
+    <div class="info">
+        <img src="../../assets/imgs/logo.png">
+
+        <div class="username">
+          /u Jas
+        </div>
+
+        <div class="edit-btn">
+          EDIT
+        </div>
+
+        <br>
+        <div class="score">
+          25 karma - 1y - 24 followers
+        </div>
+
+    </div>
+
+    <div class="bandeau">
+      <div class="theme" (click)="tabSelect(1)" [ngClass]="{'selected': tabSelected === 1}">
+        Posts
+      </div>
+      <div class="selected theme" (click)="tabSelect(2)" [ngClass]="{'selected': tabSelected === 2}">
+        Comments
+      </div>
+      <div class="theme" (click)="tabSelect(3)" [ngClass]="{'selected': tabSelected === 3}">
+        About
+      </div>
+    </div>
+
+
+    <div class="body">
+
+      <page-profile-posts *ngIf="tabSelected === 1"></page-profile-posts>
+
+      <page-profile-comments *ngIf="tabSelected === 2"></page-profile-comments>
+
+      <page-profile-about *ngIf="tabSelected === 3"></page-profile-about>
+
+    </div>
+
+  </div>
+
+</ion-content>

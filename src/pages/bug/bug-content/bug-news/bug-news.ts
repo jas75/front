@@ -14,7 +14,6 @@ export class BugNewsPage {
   constructor(public navCtrl: NavController, public newsService: NewsapiService) {
     this.newsService.getLatestNews().subscribe(data => {
       this.articles = data.articles;
-      console.log(this.articles);
     })
   }
 

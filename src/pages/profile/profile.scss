@@ -1,0 +1,55 @@
+page-profile {
+
+  .info img {
+    border-radius: 100px;
+    width: 25%;
+    border: 1px solid black;
+  }
+
+  .username {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .score {
+    font-weight: 100;
+  }
+
+  .edit-btn {
+    float: right;
+    color: dodgerblue;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+
+  .bandeau {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: white;
+    //position: fixed;
+    //width: 100%;
+    //transition: ease 0.2s;
+  }
+
+  .theme {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+    color: #717171;
+    //color: #f4f4f4;
+  }
+
+  .selected {
+    color: black !important;
+    font-weight: 500;
+    border-bottom: 1px solid blue !important;
+  }
+
+}
